@@ -1,0 +1,25 @@
+{
+  "name": "pec1",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "version": "1.0.0",
+  "description": "plantilla pec1",
+  "scripts": {
+    "start_clean": "npm-run-all clean start",
+    "build_clean": "npm-run-all clean build",
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "keywords": [
+    "cocina"
+  ],
+  "author": "Elena Pérez García",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.14.2",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.0.1"
+  }
+}
