@@ -22,5 +22,8 @@
     "parcel": "^2.14.2",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans-thai": "^5.2.5"
   }
 }
