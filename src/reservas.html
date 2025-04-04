@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>PEC1</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <include src="src/header.html"></include>
+    <main>
+      <div class="container">
+        <h1>Reservas</h1>
+        <hr>
+        <form class="formulario-reserva" action="#" method="post">
+          <div class="formulario-grupo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" required>
+          </div>
+          <div class="formulario-grupo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+          </div>
+          <div class="formulario-grupo">
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Introduzca su teléfono" required>
+          </div>
+          <div class="formulario-fila">
+            <div class="formulario-grupo">
+              <label for="fecha">Fecha de la reserva</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="formulario-grupo">
+              <label for="hora">Hora de la reserva</label>
+              <input type="time" id="hora" name="hora" required>
+            </div>
+          </div>
+          <div class="formulario-grupo">
+              <label for="comensales">Número de comensales</label>
+              <input type="number" id="comensales" name="comensales" min="1" max="30"required >
+          </div>
+          <div class="formulario-grupo">
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario"></textarea>
+          </div>
+          <div class="formulario-grupo">
+            <button class="btn-reservar" type="submit">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <include src="src/footer.html"></include>
+  </body>
+</html>

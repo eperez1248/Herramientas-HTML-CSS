@@ -256,10 +256,57 @@ header ul li:last-child a{
         margin-bottom: 3rem;
     }
 
-@media screen and (min-width: 768px){
-    .descripcion {
-        margin: 5rem 10rem;
-    }
+/* Reservas */
+
+.formulario-reserva{
+   margin: 2rem auto;
+   padding: 2rem;
+   max-width: 600px;
+}
+
+.formulario-grupo {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario-fila {
+    display: flex;
+    gap: 2rem;
+}
+
+.formulario-fila .formulario-grupo{
+    flex: 1;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    border: 1px solid darkblue;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.btn-reservar {
+    background-color: var(--bg-dark-blue);
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-reservar:hover {
+    background-color: var(--text-color-hover);
+}
+
+#comensales{
+    width: 20%;
 }
 
 /* footer*/
@@ -293,6 +340,13 @@ footer{
 
 .footer-links a:hover{
     color: skyblue;
+}
+
+
+@media screen and (min-width: 768px){
+    .descripcion {
+        margin: 5rem 10rem;
+    }
 }
 
 @media screen and (max-width: 836px){
