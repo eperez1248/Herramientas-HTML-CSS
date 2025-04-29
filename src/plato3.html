@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Risottos - Cosa Nostra</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
-  </head>
-  <body>
-    <include src="src/header.html"></include>
-    <main>
-      <div class="container">
-        <h1>Risottos</h1>
-        <div class="detalle-container">
-          <div class="imagen-destacada">
-            <img
-              class="fluid"
-              src="img/risotto/risotto-grande.webp"
-              alt="Plato principal de risotto"
-              width="500"
-              height="300"
-            />
-          </div>
 
-          <div class="descripcion">
-            <img
-              class="fluid"
-              src="img/risotto/risotto01.webp"
-              alt="Risotto de arroz integral"
-              width="150"
-            />
-            <p>
-              <b>Risotto de arroz integral:</b> Un plato a base de arroz
-              integral, lo que le da un alto contenido en fibra y con un sabor
-              muy suave, gracias a los champiñones cultivados en nuestra propia
-              huerta.
-            </p>
-            <img
-              class="fluid"
-              src="img/risotto/risotto02.webp"
-              alt="Risotto negro con salmón"
-              width="150"
-            />
-            <p>
-              <b>Risotto negro con salmón:</b> Este es un plato de lo más
-              completo, a base de arroz con tinta de calamar, lomo de salmón
-              súper jugoso y espárragos trigueros, mezclando sabores de la
-              tierra y del mar.
-            </p>
-            <img
-              class="fluid"
-              src="img/risotto/risotto03.webp"
-              alt="Risotto con langostinos y azafrán"
-              width="150"
-            />
-            <p>
-              <b>Risotto con langostinos y azafrán:</b> Cocinado con caldo de
-              verduras para darle un sabor más intenso y con unos langostinos
-              salteados en aceite de oliva, harán las delicias de todos los
-              paladares.
-            </p>
-          </div>
-          <video class="fluid" width="400" controls>
-            <source src="video/risotto.mp4" type="video/mp4" />
-          </video>
+<head>
+  <meta charset="utf-8" />
+  <title>Risottos - Cosa Nostra</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+  <include src="src/header.html"></include>
+  <main>
+    <div class="container">
+      <h1>Risottos</h1>
+      <div class="detalle-container">
+        <div class="imagen-destacada">
+          <picture>
+            <source srcset="img/risotto/risotto-grande_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/risotto/risotto-grande.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/risotto/risotto-grande.webp" alt="Plato principal de risotto" width="500" height="300" />
+          </picture>
         </div>
+
+        <div class="descripcion">
+          <picture>
+            <source srcset="img/risotto/risotto01_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/risotto/risotto01.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/risotto/risotto01.webp" alt="Risotto de arroz integral" width="150"/>
+          </picture>
+          <p>
+            <b>Risotto de arroz integral:</b> Un plato a base de arroz
+            integral, lo que le da un alto contenido en fibra y con un sabor
+            muy suave, gracias a los champiñones cultivados en nuestra propia
+            huerta.
+          </p>
+          <picture>
+            <source srcset="img/risotto/risotto02_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/risotto/risotto02.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/risotto/risotto02.webp" alt="Risotto negro con salmón" width="150"/>
+          </picture>
+          <p>
+            <b>Risotto negro con salmón:</b> Este es un plato de lo más
+            completo, a base de arroz con tinta de calamar, lomo de salmón
+            súper jugoso y espárragos trigueros, mezclando sabores de la
+            tierra y del mar.
+          </p>
+          <picture>
+            <source srcset="img/risotto/risotto03_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/risotto/risotto03.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/risotto/risotto03.webp" alt="Risotto con langostinos y azafrán" width="150"/>
+          </picture>
+          <p>
+            <b>Risotto con langostinos y azafrán:</b> Cocinado con caldo de
+            verduras para darle un sabor más intenso y con unos langostinos
+            salteados en aceite de oliva, harán las delicias de todos los
+            paladares.
+          </p>
+        </div>
+        <video class="fluid" width="400" controls>
+          <source src="video/risotto.mp4" type="video/mp4" />
+        </video>
       </div>
-    </main>
-    <include src="src/footer.html"></include>
-  </body>
+    </div>
+  </main>
+  <include src="src/footer.html"></include>
+</body>
+
 </html>

@@ -1,73 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Nuestros Platos - Cosa Nostra</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
-  </head>
-  <body>
-    <include src="src/header.html"></include>
-    <main>
-      <div class="container">
-        <h1>Nuestros platos</h1>
-        <hr />
-        <div class="categoria-container">
-          <a class="categoria-item" href="plato1.html">
-            <img src="img/pasta/pasta_grande.webp" class="fluid" alt="Pasta" />
-            <h2>Pastas</h2>
-          </a>
-          <a class="categoria-item" href="plato2.html">
-            <img src="img/pizza/pizza-grande.webp" class="fluid" alt="Pizza" />
-            <h2>Pizzas</h2>
-          </a>
-          <a class="categoria-item" href="plato3.html">
-            <img
-              src="img/risotto/risotto-grande.webp"
-              class="fluid"
-              alt="Risotto"
-            />
-            <h2>Risottos</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra02.webp" class="fluid" alt="Ensalada" />
-            <h2>Ensaladas</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra09.webp" class="fluid" alt="Verduras" />
-            <h2>Verduras</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra03.webp" class="fluid" alt="Carnes" />
-            <h2>Carnes</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra08.webp" class="fluid" alt="Pescados" />
-            <h2>Pescados</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra01.webp" class="fluid" alt="Tiramisú" />
-            <h2>Tiramisú</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra04.webp" class="fluid" alt="Panettone" />
-            <h2>Panettone</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra05.webp" class="fluid" alt="Helado" />
-            <h2>Helados</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra06.webp" class="fluid" alt="Café" />
-            <h2>Cafés</h2>
-          </a>
-          <a class="categoria-item" href="#">
-            <img src="img/platoextra07.webp" class="fluid" alt="Vino" />
-            <h2>Vinos</h2>
-          </a>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Nuestros Platos - Cosa Nostra</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+  <include src="src/header.html"></include>
+  <main>
+    <div class="container">
+      <h1>Nuestros platos</h1>
+      <hr />
+      <div class="categoria-container">
+        <a class="categoria-item" href="plato1.html">
+          <picture>
+            <source srcset="img/pasta/pasta_grande_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/pasta/pasta_grande.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/pasta/pasta_grande.webp" alt="Pasta" />
+          </picture>
+          <h2>Pastas</h2>
+        </a>
+        <a class="categoria-item" href="plato2.html">
+          <picture>
+            <source srcset="img/pizza/pizza-grande_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/pizza/pizza-grande.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/pizza/pizza-grande.webp" alt="Pizza" />
+          </picture>
+          <h2>Pizzas</h2>
+        </a>
+        <a class="categoria-item" href="plato3.html">
+          <picture>
+            <source srcset="img/risotto/risotto-grande_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/risotto/risotto-grande.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/risotto/risotto-grande.webp" alt="Risotto" />
+          </picture>
+          <h2>Risottos</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra02_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra02.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra02.webp" alt="Ensalada" />
+          </picture>
+          <h2>Ensaladas</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra09_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra09.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra09.webp" alt="Verduras" />
+          </picture>
+          <h2>Verduras</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra03_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra03.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra03.webp" alt="Carnes" />
+          </picture>
+          <h2>Carnes</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra08_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra08.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra08.webp" alt="Pescados" />
+          </picture>
+          <h2>Pescados</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra01_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra01.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra01.webp" alt="Tiramisú" />
+          </picture>
+          <h2>Tiramisú</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra04_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra04.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra04.webp" alt="Panettone" />
+          </picture>
+          <h2>Panettone</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra05_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra05.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra05.webp" alt="Helado" />
+          </picture>
+          <h2>Helados</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra06_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra06.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra06.webp" alt="Café" />
+          </picture>
+          <h2>Cafés</h2>
+        </a>
+        <a class="categoria-item" href="#">
+          <picture>
+            <source srcset="img/platoextra07_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/platoextra07.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/platoextra07.webp" alt="Vino" />
+          </picture>
+          <h2>Vinos</h2>
+        </a>
       </div>
-    </main>
-    <include src="src/footer.html"></include>
-  </body>
+    </div>
+  </main>
+  <include src="src/footer.html"></include>
+</body>
+
 </html>
