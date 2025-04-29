@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>PEC1</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <include src="src/header.html"></include>
-    <main>
-      <div class="container">
-        <h1>Pastas</h1>
-        <div class="detalle-container">
-          <div class="imagen-destacada">
-            <img
-              class="fluid"
-              src="img/pasta/pasta_grande.jpg"
-              alt="Spaguettis a la boloñesa"
-              width="500"
-              height="300"
-            />
-          </div>
 
-          <div class="descripcion">
-            <img
-              class="fluid"
-              src="img/pasta/pasta01.jpg"
-              alt="Spaghetti carbonara"
-              width="150"
-            />
-            <p>
-              <b>Spaghetti carbonara:</b> ¡La especialidad de la casa! A base de
-              nuestra salsa carbonara casera y una deliciosa mezcla de beicon,
-              champiñones y queso azul. Un plato con un sabor especial
-            </p>
-            <img
-              class="fluid"
-              src="img/pasta/pasta02.jpg"
-              alt="Spaghetti nero"
-              width="150"
-            />
-            <p>
-              <b>Spaghetti nero:</b> O espaguetis negros. Con tinta de sepia,
-              tienen un sabor suave a trigo con un toque marino, acompañado de
-              gambones de Huelva. No te dejará indiferente!
-            </p>
-            <img
-              class="fluid"
-              src="img/pasta/pasta03.jpg"
-              alt="Spaghetti al pesto"
-              width="150"
-            />
-            <p>
-              <b>Spaghetti al pesto:</b> Un clásico italiano. Con su deliciosa
-              combinación de albahaca fresca, piñones, queso parmesano, ajo y
-              aceite de oliva. Muy nutritivo y saludable.
-            </p>
-          </div>
-          <video class="fluid" width="400" controls>
-            <source src="video/pasta.mp4" type="video/mp4" />
-          </video>
+<head>
+  <meta charset="utf-8" />
+  <title>Pastas - Cosa Nostra</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+  <include src="src/header.html"></include>
+  <main>
+    <div class="container">
+      <h1>Pastas</h1>
+      <div class="detalle-container">
+        <div class="imagen-destacada">
+          <picture>
+            <source srcset="img/pasta/pasta_grande_640w.webp" media="(max-width: 600px)">
+            <source srcset="img/pasta/pasta_grande.webp" media="(min-width: 601px)">
+            <img class="fluid" src="img/pasta/pasta_grande.webp" alt="Spaguettis a la boloñesa" width="500" height="300" />
+          </picture>
         </div>
+
+        <div class="descripcion">
+          <img class="fluid" src="img/pasta/pasta01.webp" alt="Spaghetti carbonara" width="150" />
+          <p>
+            <b>Spaghetti carbonara:</b> ¡La especialidad de la casa! A base de
+            nuestra salsa carbonara casera y una deliciosa mezcla de beicon,
+            champiñones y queso azul. Un plato con un sabor especial
+          </p>
+          <img class="fluid" src="img/pasta/pasta02.webp" alt="Spaghetti nero" width="150" />
+          <p>
+            <b>Spaghetti nero:</b> O espaguetis negros. Con tinta de sepia,
+            tienen un sabor suave a trigo con un toque marino, acompañado de
+            gambones de Huelva. No te dejará indiferente!
+          </p>
+          <img class="fluid" src="img/pasta/pasta03.webp" alt="Spaghetti al pesto" width="150" />
+          <p>
+            <b>Spaghetti al pesto:</b> Un clásico italiano. Con su deliciosa
+            combinación de albahaca fresca, piñones, queso parmesano, ajo y
+            aceite de oliva. Muy nutritivo y saludable.
+          </p>
+        </div>
+        <video class="fluid" width="400" controls>
+          <source src="video/pasta.mp4" type="video/mp4" />
+        </video>
       </div>
-    </main>
-    <include src="src/footer.html"></include>
-  </body>
+    </div>
+  </main>
+  <include src="src/footer.html"></include>
+</body>
+
 </html>
