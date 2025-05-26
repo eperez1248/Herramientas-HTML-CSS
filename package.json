@@ -25,6 +25,7 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
-    "@fontsource/ibm-plex-sans-thai": "^5.2.5"
+    "@fontsource/ibm-plex-sans-thai": "^5.2.5",
+    "svgo": "^3.3.2"
   }
 }
